@@ -277,22 +277,33 @@ module.exports = function () {
     
     router.get('/get_all_prec', function (req, res) {
         
+        res.json({
+                Data: prec,
+              
+            });
 
-        res.status(200).send(prec);
     })
     
     
     
     router.get('/get_all_treatment', function (req, res) {
+         res.json({
+                Data: treat,
+              
+            });
        
-        res.status(200).send(treat);
+        
     })
     
     
     
     router.get('/get_all_doc', function (req, res) {
         
-        res.status(200).send(DocDtaa);
+        res.json({
+                Data: DocDtaa,
+              
+            });
+       
     })
 
 
